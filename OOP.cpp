@@ -19,7 +19,11 @@ class Employee{
         return Name;
     }
     void setWeight(int weight){
-        Weight = weight;
+        if (weight>=18)
+        {
+            Weight = weight;
+        }
+        
     }
     int getWeight(){
         return Weight;
@@ -54,6 +58,6 @@ int main()
     // emp1.weight = 65;
 
     emp1.IntroduceYourself();
-    emp1.setWeight(70);
+    emp1.setWeight(20);
     cout<<"My name is "<<emp1.getName()<<" and I am "<<emp1.getWeight()<<" kg(s) heavy!"<<endl;
 }
